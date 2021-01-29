@@ -3,11 +3,12 @@
 const todoInput = document.querySelector('.todo-input');
 const todoButton = document.querySelector('.todo-button');
 // add the querySelector for todoList
+const todolist = document.querySelector('.todo-list')
 
 //Event Listeners
 todoButton.addEventListener('click', addTodo);
 // add the addEventListener for todoList which has a callback function (deleteCheck)
-
+todoList.addEventListener('click', deleteCheck)
 //Functions
 function addTodo(event){
     // console.log(event.target);
